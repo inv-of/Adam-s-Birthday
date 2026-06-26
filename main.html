@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Story</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+
+background:#f8f4ef;
+
+color:#6a5b54;
+
+overflow-x:hidden;
+
+}
+
+/* خلفية */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(circle at top,#ffffff 0%,transparent 60%);
+
+pointer-events:none;
+
+}
+
+/* عنوان */
+
+.hero{
+
+height:45vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:60px;
+
+font-weight:600;
+
+color:#7a6155;
+
+}
+
+.hero p{
+
+margin-top:15px;
+
+letter-spacing:3px;
+
+font-size:13px;
+
+color:#9b8d84;
+
+}
+
+/* سكاشن */
+
+.memory{
+
+padding:70px 20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:470px;
+
+background:#fffdfb;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.card.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.card img{
+
+width:100%;
+
+height:560px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.text{
+
+padding:35px;
+
+text-align:center;
+
+}
+
+.text h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:40px;
+
+margin-bottom:15px;
+
+color:#7a6155;
+
+}
+
+.flower{
+
+font-size:22px;
+
+margin-bottom:18px;
+
+color:#c5a77b;
+
+}
+
+.text p{
+
+font-size:17px;
+
+line-height:2;
+
+color:#7b6d65;
+
+}
+
+/* Footer */
+
+.footer{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.footer h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:55px;
+
+margin-bottom:15px;
+
+color:#7a6155;
+
+}
+
+.footer p{
+
+font-size:18px;
+
+line-height:2;
+
+color:#8d8178;
+
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.text h2{
+
+font-size:34px;
+
+}
+
+.card img{
+
+height:430px;
+
+}
+
+}
+
+/* ================= Hearts Background ================= */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    color:#d84848;
+    animation:float linear infinite;
+    opacity:.7;
+    user-select:none;
+}
+
+@keyframes float{
+
+0%{
+    transform:translateY(0) rotate(0deg);
+    opacity:0;
+}
+
+10%{
+    opacity:.8;
+}
+
+100%{
+    transform:translateY(-120vh) rotate(360deg);
+    opacity:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="hearts"></div>
+
+<section class="hero">
+
+<h1>Our Story</h1>
+
+<p>EVERY MOMENT BECAME A BEAUTIFUL MEMORY</p>
+
+</section>
+
+<!-- Card 1 -->
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo1.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+اليوم اللي عرفت فيه انك هتبقى حبيبي وصحبي وكل حاجه ف حياتي مهما اتصورت معاك هتفضل دي صورتي المميزه💋 
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Card 2 -->
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo2.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+مش هنسى كنت مبسوطه اليوم ده ازاي ومكنتش عيزاك تمشي وتفضل تلف بيا وكان نفسي منلاقيش ليكود عشان منروحش 😔
+
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo3.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+It's my fav picture 🥺♥️
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo4.jpg">
+
+<div class="text">
+
+
+<div class="flower">❀</div>
+
+<p>
+
+حتى لو الخروجه دمها سم وجودك علطول بيخليني مبسوطه مبقتش بعرف افرح من غيرك 🌍
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo5.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+كنت هزعل لو مكنتش جيت وفرحت لما انت اتصرفت وخلعت حبه صغيرين وهفضل فكره اني السنه ابتدت بيك وكل سنه هتبداء بيك يحياتي ♥️
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo6.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+متفكرش اشمعنا الصوره دي عشان بحب بصتك وضحكتك فيها لاني بحب ضحتك اكتر منك اصلا 🫂
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo7.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+بحب لما بتهودني علطول وخصوصا لما بنتخانق واليوم ده اتخنقت معاك اكتر متكلمت بس عيزاك تعرف اني كل مبتخانق معاك كل ما بحبك اكتر 🫂
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo8.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+🌍🧿
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo9.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+انا مش هنسى فرحتي بالورد وفرحتي ب انك ف حضني انت حبيبي واخويا وصحبي وكل حاجه انا بحبك اوي يا ادم معرفش الحياة ممكن تبقى من غيرك عامله ازاي بس اللي عرفاه انها مش هيبقى ليها معنى ولا لون لانك بتحلي كل حاجه خناقتنا وبرودك وكل حاجه فيك بحبها انا مبسوطه اني ربنا عوضني بيك ولو اعرف اني العوض هيبقى كدا كنت هقعد ف بيتنا مستنياك انت كل حاجه ليا او بمعنى الاصح انت دنيتي 🌍🧿
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo10.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+عمتا انا علطول نظرتي ليك بتبقى بفخر وانا فخوره بيك ومجهودك وانك راجل مفيش كتير منك شايل كل حاجه مفيش فرق بينك وبين الجبل هتفضل فعيني احسن راجل واجدع حد ف دنيا ينور عيني هبقى فخوره اكتر لو اتجوزتني🧿
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo11.jpg">
+
+<div class="text">
+
+
+<div class="flower">❀</div>
+
+<p>
+
+Fav memories with fav person 🌍
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="memory">
+
+<div class="card">
+
+<img src="photo12.jpg">
+
+<div class="text">
+
+<div class="flower">❀</div>
+
+<p>
+
+Special memories with you🌍🫂
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+<p>
+
+Happy birthday yhbiby ana btmna any 3ed meladk da ykon mokhtalf 3n ay mara 2abl kda w atmna any kol sana yb2a mokhtalf w tb2a 3aml kol sana haga mokhtalfa f hyatk bs 3abd llah mwgod 3ltlo🌍🫂
+
+</p>
+
+</section>
+
+<script>
+
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.25});
+
+cards.forEach(card=>observer.observe(card));
+
+</script>
+
+<script>
+
+const hearts=document.querySelector(".hearts");
+
+function createHeart(){
+
+    const heart=document.createElement("span");
+
+    heart.innerHTML="❤";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.fontSize=(12+Math.random()*22)+"px";
+
+    heart.style.animationDuration=(6+Math.random()*5)+"s";
+
+    heart.style.opacity=Math.random()*0.6+0.2;
+
+    hearts.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },11000);
+
+}
+
+setInterval(createHeart,350);
+
+</script>
+</body>
+</html>
